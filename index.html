@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>обзор процессоров Xeon s2011v3</title>
+	<meta name="title" content="обзор процессоров серии 2600 v3 на s2011v3, как поднять частоту xeon, какой процессор на 2011v3 выбрать">
+	<meta name="description" content="особенности сборки систем на сокете 2011v3 и процессорах XEON, как убрать просадки частоты при максимальной нагрузке на процессор, советы при сборке компьютеров на процессорах Haswell, обход ограничения TDP">
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="img/icon-s.png">
+	<meta property="og:title" content="обзор процессоров Xeon s2011v3">
+	<meta property="og:description" content="особенности сборки систем на сокете 2011v3 и процессорах XEON, как убрать просадки частоты при максимальной нагрузке на процессор, советы при сборке компьютеров на процессорах Haswell">
+	<meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+	<meta name="keywords" content="xeon, s2011 v3, 2011v3, 2620, 2630, 2640, 2650, 2660, 2670, 2678, 2680, X99" />
+	<meta name="yandex-verification" content="fbaed47c7d97e7f5" />
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+	<div class="header">
+				<div class="logo">
+					<div class="logo_text">
+						<h1 class="wb wb_animated">Процессоры XEON на soket 2011 v3</h1>
+							<h2>выбираем оптимальный процессор для платформы s2011v3</h2>
+					</div>
+				</div>		
+
+				
+		<div class="menubar">
+
+			<ul class="menu">
+				<li class="selected"><a href="#">ГЛАВНАЯ</a><img src="img/down.png" alt="down" class="selected_img"></li> 
+				<li><a href="Xeon1600series.html">Xeon 1600</a></li>
+				<li><a href="Xeon2600series.html">Xeon 2600</a></li>
+				<li><a href="top.html">статьи</a></li>
+				<li><a href="contact.html">обратная связь</a></li>
+			</ul>
+			
+		</div>
+	</div>	
+
+	<div class="backimage">
+	<div class="site_content">
+
+		<div class="sidebar_container">
+
+<!-- 			<div class="sidebar">
+				<h2>Поиск</h2>
+				<form>
+					
+					<input class="place_for_search" type="text" id="text-to-find" value=" " placeholder="поиск" autofocus> 
+					<input class="btn button_for_search" type="submit" onclick="javascript: FindOnPage('text-to-find',true); return false;" value="найти" title="Начать поиск">
+				
+				</form>
+			</div> -->
+
+			<div class="sidebar1>
+				<a href="https://content-management.com.ua/"><img src="img/cm.jpg" alt="watch" class="side1"></a>
+			</div>
+			
+
+			<div class="sidebar3">
+				
+				<div class="clock">
+					<div class="hour">
+						<div class="hr" id="hr"></div>
+					</div>
+					<div class="min">
+						<div class="mn" id="mn"></div>
+					</div>
+					<div class="sec">
+						<div class="sc" id="sc"></div>
+					</div>
+				</div>	
+			</div>
+	</div>
+	
+
+	<div class="catalog">	
+		<div class="container">
+		<ul class="catalog_tabs">
+			<li class="catalog_tab"><div>CPU 1600 серии</div></li>
+			<li class="catalog_tab catalog_tab_active"><div>начальные CPU</div></li>
+			<li class="catalog_tab"><div>8-ми ядерные CPU</div></li>
+			<li class="catalog_tab"><div>10-ти ядерные CPU</div></li>
+			<li class="catalog_tab"><div>12-ти ядерные CPU</div></li>
+			<li class="catalog_tab"><div>14-ти ядерные CPU</div></li>
+		</ul>
+
+		<div class="catalog_content">
+			<div class="item">
+				<div class="item-wrapper">
+				<img src="img/1620v3.png" alt="watch" class="item_img">
+				<div class="item_subtitle item_subtitle_text">XEON 1620V3</div>
+				<div class="item_subtitle"><a href="1620.html">ПОДРОБНЕЕ</a></div>
+			
+				</div>
+
+			</div>
+			<div class="item">
+				<div class="item-wrapper">
+			
+				<img src="img/1650v3.png" alt="watch" class="item_img">
+				<div class="item_subtitle item_subtitle_text">XEON 1650V3</div>
+				<div class="item_subtitle"><a href="1650.html">ПОДРОБНЕЕ</a></div>
+			
+				</div>
+			
+			</div>
+	</div>
+
+	<div class="catalog_content catalog_content_active">
+		<div class="item">
+			<div class="item-wrapper">
+		
+			<img src="img/2609v3.png" alt="watch" class="item_img">
+			<div class="item_subtitle item_subtitle_text">XEON 2609V3</div>
+			<div class="item_subtitle"><a href="2609.html">ПОДРОБНЕЕ</a></div>
+		
+			</div>
+
+		</div>
+		<div class="item">
+			<div class="item-wrapper">
+	
+			<img src="img/2620v3.png" alt="watch" class="item_img">
+			<div class="item_subtitle item_subtitle_text">XEON 2620V3</div>
+			<div class="item_subtitle"><a href="2620.html">ПОДРОБНЕЕ</a></div>
+		
+			</div>
+
+		</div>
+		<div class="item">
+			<div class="item-wrapper">
+		
+			<img src="img/2630lv3.png" alt="watch" class="item_img">
+			<div class="item_subtitle item_subtitle_text">XEON 2630lV3</div>
+			<div class="item_subtitle"><a href="2630l.html">ПОДРОБНЕЕ</a></div>
+		
+			</div>
+
+		</div>
+
+	</div>
+	<div class="catalog_content">
+		<div class="item">
+			<div class="item-wrapper">
+		
+			<img src="img/2630v3.png" alt="watch" class="item_img">
+			<div class="item_subtitle item_subtitle_text">XEON 2630V3</div>
+			<div class="item_subtitle"><a href="2630.html">ПОДРОБНЕЕ</a></div>
+		
+			</div>
+
+		</div>
+		<div class="item">
+			<div class="item-wrapper">
+		
+			<img src="img/2640v3.png" alt="watch" class="item_img">
+			<div class="item_subtitle item_subtitle_text">XEON 2640V3</div>
+			<div class="item_subtitle"><a href="2640.html">ПОДРОБНЕЕ</a></div>
+		
+			</div>
+
+		</div>
+		
+</div>
+			
+<div class="catalog_content">
+	<div class="item">
+		<div class="item-wrapper">
+	
+		<img src="img/2650v3.png" alt="watch" class="item_img">
+		<div class="item_subtitle item_subtitle_text">XEON 2650V3</div>
+		<div class="item_subtitle"><a href="2650.html">ПОДРОБНЕЕ</a></div>
+	
+		</div>
+
+	</div>
+	<div class="item">
+		<div class="item-wrapper">
+	
+		<img src="img/2660v3.png" alt="watch" class="item_img">
+		<div class="item_subtitle item_subtitle_text">XEON 2660V3</div>
+		<div class="item_subtitle"><a href="2660.html">ПОДРОБНЕЕ</a></div>
+	
+		</div>
+
+	</div>
+	
+</div>
+			
+<div class="catalog_content">
+	<div class="item">
+		<div class="item-wrapper">
+
+		<img src="img/2670v3.png" alt="watch" class="item_img">
+		<div class="item_subtitle item_subtitle_text">XEON 2670V3</div>
+		<div class="item_subtitle"><a href="2670.html">ПОДРОБНЕЕ</a></div>
+	
+		</div>
+
+	</div>
+	<div class="item">
+		<div class="item-wrapper">
+
+		<img src="img/2678v3.png" alt="watch" class="item_img">
+		<div class="item_subtitle item_subtitle_text">XEON 2678V3</div>
+		<div class="item_subtitle"><a href="2678.html">ПОДРОБНЕЕ</a></div>
+	
+		</div>
+
+	</div>
+	<div class="item">
+		<div class="item-wrapper">
+	
+		<img src="img/2680v3.png" alt="watch" class="item_img">
+		<div class="item_subtitle item_subtitle_text">XEON 2680V3</div>
+		<div class="item_subtitle"><a href="2680.html">ПОДРОБНЕЕ</a></div>
+	
+		</div>
+
+	</div>	<div class="item">
+		<div class="item-wrapper">
+
+		<img src="img/2690v3.png" alt="watch" class="item_img">
+		<div class="item_subtitle item_subtitle_text">XEON 2690V3</div>
+		<div class="item_subtitle"><a href="2690.html">ПОДРОБНЕЕ</a></div>
+
+		</div>
+
+	</div>
+	
+</div>
+<div class="catalog_content">
+	<div class="item">
+		<div class="item-wrapper">
+		<img src="img/2683v3.png" alt="watch" class="item_img">
+		<div class="item_subtitle item_subtitle_text">XEON 2683V3</div>
+		<div class="item_subtitle"><a href="2683.html">ПОДРОБНЕЕ</a></div>
+		</div>
+
+	</div>
+	<div class="item">
+		<div class="item-wrapper">
+		<img src="img/2697v3.png" alt="watch" class="item_img">
+		<div class="item_subtitle item_subtitle_text">XEON 2697V3</div>
+		<div class="item_subtitle"><a href="2697.html">ПОДРОБНЕЕ</a></div>
+		</div>
+
+	</div>
+	
+</div>
+</div>
+</div>
+	
+					
+<section class="description">	
+
+	<div class="post_content">
+	<b>Конечно</b>, список процессоров на нашем сайте, которые выпускались для сокета 2011 v3 далеко не полный, существует еще множество процессоров v3 : 2622, 2628, 2628l, 2629, 2637, 2652, 2658 и другие, но найти их довольно проблематично в продаже, даже на алиэкспресс их почти нет, поэтому мы их здесь и не рассматриваем, ведь, в основном сборки идут на доступных в продаже и при этом за адекватные деньги процессорах.  
+	<br> В реальности, в наиболее бюджетных сборках устанавливаются E5 2620v3, 2630lv3, которые имеют, несмотря на разные характеристики приблизительно одинаковую производительность. <br>
+	В более продвинутых сборках, на материнских платах с неплохим охлаждением VRM достойно будут выглядеть процессоры с TDP 105 ватт, такие как E5 2650v3, 2660v3, имеющие по 10 ядер 20 потоков, уже работающие с DDR4 2133 МГц, а последний имеет частоту в ТБ 3.3 ГГц, что довольно нелохо, и на данный момент их стоимость в пределах 50 долл. 
+	Ну а имея достойную мать, которая выдержит и более 120 ватт, уже все упирается в финансовые возможности) 12-14 ядер и частота CPU зависит только от возможности вложить в процессор сумму денег. <br>
+	
+	</div>
+	
+			<h4><a href="top.html#news_post" class="news">особенности сборки систем на сокете 2011v3 и процессорах XEON</a></h4>
+
+			<div class="post_content">
+				Главная особенность процессоров серии v3 на данном сокете — возможность блокировки турбо-буста при помощи небольшой модификации биос материнской платы,
+				это уникальная особенность процессоров на архитектуре Haswell, которой больше нет ни в одной серии процессоров. Благодаря чему возможно установить максимальную частоту
+				турбо-буста не на 1 ядро, как обычно, а на все процессорные ядра. Учитывая достаточно большую разницу между стоковой частотой и частотой турбобуста, разница в производительности существенна. 
+				Для этого из под виндовс (программаторы и т.п. при правильных действиях не нужны) Все действия выполняются по инструкциям, которых полно в сети и танцы с бубном не требуются....
+			</div>
+				
+			
+			<h4><a href="top.html#news_post" class="news">советы при сборке компьютеров на процессорах Haswell</a></h4>
+			<div class="post_content">
+				для обозреваемого сокета существует несколько моментов, на которые следует обратить внимание при сборке. Один из них - не все платы X99 поддерживают разгон процессоров с разблокированным множителем, хотя данный момент легко решается установкой специальной программы от 
+				intell - Intell extreme tuning, которая из под виндовс позволяет настроить все необходимые параметры. Однако,...
+			</div>
+
+			<h4><a href="top.html#news_post" class="news_read">xeon 2666v3-топовый процессор на сокет</a></h4>
+
+			<div class="post_content">
+				Xeon e5 2666 v3 — 10-ядерник, получивший распространение в прошлом году, и имеет несколько интересных особенностей: может работать как с DDR4, так и с DDR3.
+				причем с любым типом памяти он может работать на частоте до 2133 МГц, и имеет при этом частоту в турбобусте 3500 МГц (в стоке 2900 МГц) что делает его очень интересным  приобретением. 
+				Из минусов данного процессора - TDP в 135 ватт, что однозначно не позволит его запускать на материнских платах со слабыми элементами питания процессора, но это же является и плюсом, так как этот камень будети в состоянии удерживать частоты турбобуста.
+			</div>
+		
+			<h4><a href="top.html#news_post" class="news">Как убрать просадки частоты при максимальной нагрузке на процессор</a></h4>
+			<div class="post_content">
+				Одна из проблем при использовании процессоров с TDP более 100 ватт, о особенно xeon 2660v3, 2680v3, и других, занимающих верхнее место по частоте в одной линейке по количеству ядер, является невозможность  удерживать высокую частоту на все ядра  в режиме высокой нагрузки, все это опять же из за пресловутого ограничения мощности. <br>
+				НО!! <br>
+			</div>	
+</section>
+
+
+		<div class="footer footer_main">
+			
+				<a href="#">главная</a> | 	
+				<a href="#">процессоры</a> |
+				<a href="https://content-management.com.ua/">создадим/заполним</a> |
+				<a href="contact.html">контакты</a>
+		
+		</div>
+		<!-- <a href="https://www.gogetssl.com" rel="nofollow" title="GoGetSSL Site Seal Logo" ><div id="gogetssl-animated-seal" style="width:180px; height:58px;"></div></a>
+ -->
+	</div>
+</div>
+<div class="modal modal_mini" id="sanks">
+	<div class="modal_close">&times;</div>
+	<div class="modal_subtitle">Спасибо за вашу заявку!</div>  
+	<div class="modal_descr">Наш менеджер свяжется с вами 
+		в ближайшее время!</div>
+</div>
+
+<script src="js/1.11.0.min.js"></script>
+<script src="js/1.2.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
